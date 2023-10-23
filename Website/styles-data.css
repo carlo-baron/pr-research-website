@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 1.7rem;
+}
+.data{
+    font-size: 1.2rem;
+    margin-left: .5in;
+    margin-right: .5in;
+}
+
+.data table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 0.5rem;
+    text-align: center;
+}
