@@ -2,7 +2,7 @@
 // Database connection settings
 $servername = "localhost";
 $username = "root";
-$password = "bes23-24";
+$password = "";
 $dbname = "login";
 
 // Create connection
@@ -27,15 +27,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Verify the password (plaintext comparison)
         if ($password === $stored_password) {
+            // Successful login
             header("Location: data.php");
             exit;
-        } else {
-            echo "Incorrect password!";
         }
-    } else {
-        echo "Username not found!";
     }
 }
+
+// Unsuccessful login, redirect back to index.php
+header("Location: index.php");
+exit;
 
 $conn->close();
 ?>

@@ -1,27 +1,50 @@
-*{
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-.title{
+.title {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    margin-top: 2%;
-    font-size: 1.7rem;
-}
-.data{
-    font-size: 1.2rem;
-    margin-left: .5in;
-    margin-right: .5in;
+    padding: 10px;
 }
 
-.data table{
+.data {
+    padding: 20px;
+}
+
+table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 20px;
 }
 
-td, th{
-    border: 1px solid black;
-    padding: 0.5rem;
-    text-align: center;
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Logout Button Styles */
+form.logout-form {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+form.logout-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
 }
