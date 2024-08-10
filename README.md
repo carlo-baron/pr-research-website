@@ -6,3 +6,5 @@ We made an iot project for our Practical Research subject during our Grade 12 ye
 
 ## Note
 I might add the arduino and node-red code in the future, but only if I can find them.
+
+The code is mostly made by chat-gpt. I don't know how to use php.
